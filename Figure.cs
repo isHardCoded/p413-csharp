@@ -6,26 +6,33 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp26
 {
-    internal class Figure
+    public abstract class Figure
     {
-        protected int width;
-        protected int height;
+        public abstract double GetArea();
+    }
 
-        public int Width
+    public class Rectangle : Figure
+    {
+        public double Width { get; set; }
+        public double Height { get; set; }
+
+        public Rectangle(double width, double height) 
         {
-            get => width;
-            set => width = value;
+            Width = width;
+            Height = height;
         }
 
-        public Figure(int width, int height)
-        {
-            this.width = width;
-            this.height = height;
-        }
+        public override double GetArea() => Width * Height;
+    }
 
-        public override string ToString()
+    public class  Circle : Figure
+    {
+        private const double PI = 3.14;
+        public double Radius { get; set; }
+        public Circle(double radius)
         {
-            return $"Width: {width}, Height: {height}";
+            Radius = radius;
         }
+        public override double GetArea() => PI * Radius * Radius;
     }
 }
