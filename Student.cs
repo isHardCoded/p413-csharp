@@ -50,7 +50,7 @@ namespace ConsoleApp26
 
             foreach (Student student in students)
             {
-                student.ToString();
+                Console.WriteLine(student.ToString());
             }
         }
 
@@ -82,6 +82,7 @@ namespace ConsoleApp26
         {
             try
             {
+                students.Clear();
                 using (StreamReader reader = new StreamReader(path))
                 {
                     string line;
