@@ -1,0 +1,2 @@
+Phone, 599, 20, Samsung, 6
+T-Shirt, 299, 50, M, Хлопок

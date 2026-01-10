@@ -89,7 +89,9 @@ namespace ConsoleApp26
 
                     while ((line = reader.ReadLine()) != null)
                     {
+                        // Name;Age;Grade
                         var parts = line.Split(';');
+                        // [Name, Age, Grade]
 
                         if (parts.Length == 3)
                         {
