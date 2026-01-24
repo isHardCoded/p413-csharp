@@ -115,6 +115,7 @@
     <Compile Include="models\Address.cs" />
     <Compile Include="models\Company.cs" />
     <Compile Include="models\Geo.cs" />
+    <Compile Include="models\Login.cs" />
     <Compile Include="models\User.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
